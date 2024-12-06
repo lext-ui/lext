@@ -1,25 +1,24 @@
 {
-  "name": "native",
-  "version": "1.0.0",
-  "main": "index.js",
-  "scripts": {
-    "dev": "expo start --ios",
-    "start": "expo start",
-    "android": "expo start --android",
-    "ios": "expo start --ios",
-    "web": "expo start --web"
-  },
-  "dependencies": {
-    "expo": "^52.0.17",
-    "expo-status-bar": "^2.0.0",
-    "react": "^18.2.0",
-    "react-native": "^0.73.0",
-    "@lextdev/button": "*"
-  },
-  "devDependencies": {
-    "@babel/core": "^7.20.0",
-    "@types/react": "^18.2.64",
-    "typescript": "^5.4.2"
-  },
-  "private": true
+	"name": "@lextdev/native",
+	"version": "1.0.0",
+	"scripts": {
+		"start": "expo start",
+		"android": "expo start --android",
+		"dev": "expo start --ios",
+		"ios": "expo start --ios",
+		"clean": "rm -rf .turbo && rm -rf node_modules && rm -rf ios && rm -rf android"
+	},
+	"dependencies": {
+		"@lextdev/core": "*",
+		"expo": "^52.0.17",
+		"expo-status-bar": "^2.0.0",
+		"react": "^18.2.0",
+		"react-native": "^0.76.3"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.20.0",
+		"@types/react": "^18.2.64",
+		"typescript": "^5.4.2"
+	},
+	"private": true
 }

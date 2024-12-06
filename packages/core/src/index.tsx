@@ -1,2 +1,2 @@
 // components
-export * from './components/shared/flex';
+export * from "./components/";

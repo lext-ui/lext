@@ -1,25 +1,26 @@
 {
-  "name": "@lextdev/core",
-  "version": "1.0.0",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "scripts": {
-    "build": "tsup",
-    "dev": "tsup --watch",
-    "clean": "rm -rf dist",
-    "test": "yarn test"
-  },
-  "dependencies": {
-    "react": ">=18",
-    "react-native": ">=0.73",
-    "react-native-unistyles": "^2.20.0"
-  },
-  "devDependencies": {
-    "@testing-library/react-native": "^12.9.0",
-    "@types/react": "^18.2.64",
-    "@types/react-native": "^0.73.0",
-    "tsup": "^8.0.2",
-    "typescript": "^5.4.2"
-  }
+	"name": "@lextdev/core",
+	"version": "1.0.0",
+	"main": "dist/index.js",
+	"module": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"scripts": {
+		"build": "tsup",
+		"dev": "tsup --watch",
+		"clean": "rm -rf dist",
+		"test": "yarn test"
+	},
+	"dependencies": {
+		"react": ">=18",
+		"react-native": ">=0.73"
+	},
+	"devDependencies": {
+		"@testing-library/react-native": "^12.9.0",
+		"@types/jest": "^29.5.14",
+		"@types/mocha": "^10.0.10",
+		"@types/react": "^18.2.64",
+		"@types/react-native": "^0.73.0",
+		"tsup": "^8.0.2",
+		"typescript": "^5.4.2"
+	}
 }

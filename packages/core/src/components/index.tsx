@@ -1,1 +1,3 @@
-export { Flex } from './shared/flex';
+export { Button } from './button';
+export { Flex } from './flex';
+

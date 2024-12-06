@@ -1,25 +1,24 @@
 {
-  "name": "lextdev",
-  "private": true,
-  "workspaces": ["apps/*", "packages/*"],
-  "scripts": {
-    "prebuild": "turbo run prebuild --filter=native",
-    "dev": "turbo dev --parallel",
-    "build": "turbo run build",
-    "lint": "turbo run lint",
-    "test": "turbo run test",
-    "clean": "turbo run clean && rm -rf node_modules",
-    "create": "yarn run scripts/create-package.ts",
-    "type-check": "turbo run type-check",
-    "format": "turbo run format",
-    "format:check": "turbo run format:check"
-  },
-  "devDependencies": {
-    "@biomejs/biome": "^1.9.4",
-    "turbo": "^2.3.3"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "packageManager": "yarn@1.22.22"
+	"name": "lextdev",
+	"private": true,
+	"workspaces": ["apps/*", "packages/*"],
+	"scripts": {
+		"prebuild": "turbo run prebuild --filter=@lextdev/native",
+		"dev": "turbo run dev",
+		"clean": "turbo run clean && rm -rf node_modules",
+		"test": "turbo run test",
+		"create": "yarn run scripts/create-package.ts",
+		"format": "turbo run format",
+		"format:check": "turbo run format:check",
+		"pod": "cd apps/native/ios && pod install",
+		"setup:ios": "yarn prebuild && yarn pod"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^1.9.4",
+		"turbo": "^2.3.3"
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"packageManager": "yarn@1.22.22"
 }
