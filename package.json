@@ -3,21 +3,23 @@
   "private": true,
   "workspaces": ["apps/*", "packages/*"],
   "scripts": {
+    "prebuild": "turbo run prebuild --filter=native",
+    "dev": "turbo dev --parallel",
     "build": "turbo run build",
-    "dev": "turbo run dev",
-    "clean": "turbo run clean && rm -rf node_modules",
     "lint": "turbo run lint",
     "test": "turbo run test",
-    "create": "bun run scripts/create-package.ts",
-    "ios": "cd apps/native && expo prebuild --clean &&bun run ios",
-    "android": "cd apps/native && bun run android"
+    "clean": "turbo run clean && rm -rf node_modules",
+    "create": "yarn run scripts/create-package.ts",
+    "type-check": "turbo run type-check",
+    "format": "turbo run format",
+    "format:check": "turbo run format:check"
   },
   "devDependencies": {
-    "@biomejs/biome": "^1.5.3",
-    "turbo": "^2.2.3"
+    "@biomejs/biome": "^1.9.4",
+    "turbo": "^2.3.3"
   },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "bun@1.1.29"
+  "packageManager": "yarn@1.22.22"
 }

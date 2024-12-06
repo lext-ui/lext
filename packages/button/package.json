@@ -8,7 +8,7 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "clean": "rm -rf dist",
-    "test": "bun test"
+    "test": "yarn test"
   },
   "dependencies": {
     "react": ">=18",

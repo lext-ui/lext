@@ -1,9 +1,10 @@
 # Lext - React Native UI Library
 
-**Simplify Mobile App Development with Powerful, Flexible, and User-Friendly UI Components**
+## Simplify Mobile App Development with Powerful, Flexible, and User-Friendly UI Components
 
 ![Lext Logo](https://res.cloudinary.com/dwmejslx5/video/upload/v1712173674/namsqlrjd4yslli11tzv.jpg)  
-*Lext is a sophisticated UI library designed for React Native, aiming to enhance mobile app development.*
+
+Lext is a sophisticated UI library designed for React Native, aiming to enhance mobile app development.
 
 [![npm version](https://img.shields.io/npm/v/@lextdev/core.svg?style=flat)](https://www.npmjs.com/package/@lextdev/core)
 [![GitHub issues](https://img.shields.io/github/issues/lextdev/lext)](https://github.com/lextdev/lext/issues)
